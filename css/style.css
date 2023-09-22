@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    margin-top: 40px;
+}
+header{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+header .search_div{
+    background-color: cyan;
+    text-align: center;
+    border-radius: 5px;
+    padding: 8px;
+}
+header i{
+    font-size: 20px;
+    color: #444;
+}
+header .search_div input{
+    width: 80%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #444;
+    font-size: 13px;
+}
+header .addNew{
+    padding: 10px 20px;
+    background-color: cyan;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: #444;
+    cursor: pointer;
+}
+/* overlay */
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 1;
+}
+/* overlay */
+.addNewContact{
+    width: 30%;
+    background-color: cyan;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    border-radius: 4px;
+    border:  solid 2px black;
+    z-index: 2;
+    display: none;
+}
+.addNewContact > i{
+    font-size: 90px;
+}
+.addNewContact input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    color: #888;
+}
+.addNewContact .btn{
+    background-color: transparent;
+    padding: 10px 20px;
+    border:  solid 1px #000;
+    font-size: 20px;
+    margin-top: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.addNewContact  .close{
+    position: absolute;
+    font-size: 30px;
+    background-color: cyan;
+    border: none;
+    top: 3%;
+    right: 5%;
+}
+.table_section{
+    margin-top: 40px;
+}
+.table_section table{
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+th,td{
+    border:  1px solid #999;
+    padding: 20px;
+}
+.edit{
+    color: green;
+}
+.delete{
+    color: red;
+}
